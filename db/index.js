@@ -15,7 +15,7 @@ const save = function(data) {
   values: [data]
   }
 
-  return db.query(options)
+  return db.queryAsync(options)
 
 }
 

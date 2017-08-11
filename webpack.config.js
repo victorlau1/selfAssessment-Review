@@ -4,7 +4,7 @@ var APP_DIR = path.join(__dirname, '/client/src/private');
 
 
 module.exports = {
-
+  target: 'node',
   entry: `${APP_DIR}/index.jsx`,
   output: {
     filename: 'bundle.js',

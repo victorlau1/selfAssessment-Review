@@ -8,7 +8,6 @@ class Search extends React.Component {
       term: ''
     }
 
-  //this.performSearch = this.performSearch.bind(this);
   this.handleChange = this.handleChange.bind(this);
   this.handleSubmit = this.handleSubmit.bind(this);
 
@@ -29,9 +28,9 @@ class Search extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Movies
-          <textarea value={this.state.term} onChange={this.handleChange} />
+          Movie:
         </label>
+          <input value={this.state.term} onChange={this.handleChange} />
         <input type="submit" value="Submit" />
       </form>
     );
